@@ -1,12 +1,7 @@
 
-<h1><%= 'Hi Everyone' %></h1>
+<h1>Hi Everyone!</h1>
 
-<form action="/ask">
+<form action="/answer">
   <input type="text" name="question" placeholder="Ask a question!">
   <input type="submit" value="Ask!">
 </form>
-
-<input type="text"
-       name="question"
-       value="<%= params[:question] %>"
-       placeholder="Ask a question!">

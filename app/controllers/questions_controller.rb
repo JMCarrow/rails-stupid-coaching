@@ -1,9 +1,16 @@
 class QuestionsController < ApplicationController
   def ask
-    puts 'Hello Ruby World!'
   end
 
   def answer
-    puts 'Here is your knowledge my young child.'
+    @question = params[:question]
+
+    if params[:question].upcase == 'I AM GOING TO WORK'
+      @answer = 'Great!'
+    elsif params[:question[-1]] == '?'
+      @answer = 'Silly question, get dressed and go to work!'
+    else
+      @answer = "I don't care, get dressed and go to work!"
+    end
   end
 end
