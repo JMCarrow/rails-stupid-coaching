@@ -1,0 +1,8 @@
+<h1><%= 'I knoweth all. The question you asked was: '%></h1>
+<h2><%= params[:question] %></h2>
+
+
+<form action="/answer">
+  <input type="text" name="answer">
+  <input type="submit" value="Try Again!">
+</form>
